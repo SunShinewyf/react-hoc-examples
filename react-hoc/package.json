@@ -1,0 +1,23 @@
+{
+  "name": "react-hoc-examples",
+  "version": "1.0.0",
+  "description": "the examples of react-hoc",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SunShinewyf/react-hoc-examples.git"
+  },
+  "keywords": [
+    "react",
+    "hoc"
+  ],
+  "author": "SunShinewyf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SunShinewyf/react-hoc-examples/issues"
+  },
+  "homepage": "https://github.com/SunShinewyf/react-hoc-examples#readme"
+}

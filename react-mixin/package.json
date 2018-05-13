@@ -1,0 +1,21 @@
+{
+  "name": "react-mixin",
+  "version": "1.0.0",
+  "description": "the example of react-mixin",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-js index.js"
+  },
+  "keywords": [
+    "mixin",
+    "react"
+  ],
+  "author": "SunShinewyf",
+  "license": "ISC",
+  "dependencies": {
+    "create-react-class": "^15.6.3",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "run-js": "^2.1.1"
+  }
+}
