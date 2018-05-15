@@ -4,7 +4,10 @@
   "description": "the example of react-mixin",
   "main": "index.js",
   "scripts": {
-    "start": "run-js index.js"
+    "start": "run-js index.js",
+    "example2": "run-js example2.js",
+    "example3": "run-js example3.js",
+    "example4": "run-js example4.js"
   },
   "keywords": [
     "mixin",
