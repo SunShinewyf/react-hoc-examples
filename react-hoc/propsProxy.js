@@ -6,6 +6,10 @@
 import React from "react";
 import ReactDom from "react-dom";
 
+function getDisplayName(WrappedComponent) {
+  return WrappedComponent.displayName || WrappedComponent.name || 'Component';
+}
+
 class Example extends React.PureComponent {
   constructor(props) {
     super(props);
@@ -24,7 +28,7 @@ class Example extends React.PureComponent {
 }
 
 function HOC(WrappedComponent) {
-  return class EnhancedComponent extends React.PureComponent {
+  class EnhancedComponent extends React.PureComponent {
     render() {
       const props = Object.assign({}, this.props, {
         name: "SunShinewyf",
@@ -32,7 +36,9 @@ function HOC(WrappedComponent) {
       });
       return <WrappedComponent {...props} />;
     }
-  };
+  }
+  EnhancedComponent.displayName = `Hoc(${getDisplayName(WrappedComponent)})`;
+  return EnhancedComponent;
 }
 
 const HocComponent = HOC(Example);

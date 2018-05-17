@@ -8,3 +8,5 @@ $ cd react-mixin / react-hoc
 $ npm install 
 $ npm start   //查看 package.json 中的响应命令
 ```
+
+### mixin 的 特性
