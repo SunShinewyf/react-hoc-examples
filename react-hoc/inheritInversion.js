@@ -1,5 +1,5 @@
 /**
- * 模式：Props Proxy
+ * 模式：反向继承(Inheritance Inversion)
  * author: SunShinewyf
  * date: 2017-05-17
  */
@@ -15,22 +15,16 @@ class Example extends React.PureComponent {
     const { name, age, github } = this.props;
     return (
       <div>
-        <p>{name}</p>
         <p>{age}</p>
-        <p>{github}</p>
       </div>
     );
   }
 }
 
-function HOC(WrappedComponent) {
-  return class EnhancedComponent extends React.PureComponent {
+function HOC(WrapperComponent) {
+  return class Inheritance extends WrapperComponent {
     render() {
-      const props = Object.assign({}, this.props, {
-        name: "SunShinewyf",
-        github: "http://github.com/SunShinewyf"
-      });
-      return <WrappedComponent {...props} />;
+      return super.render();
     }
   };
 }
