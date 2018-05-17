@@ -4,20 +4,23 @@
   "description": "the examples of react-hoc",
   "main": "index.js",
   "scripts": {
-    "test": "npm start"
+    "start": "run-js index.js",
+    "input": "run-js hocInput.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SunShinewyf/react-hoc-examples.git"
   },
-  "keywords": [
-    "react",
-    "hoc"
-  ],
+  "keywords": ["react", "hoc"],
   "author": "SunShinewyf",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SunShinewyf/react-hoc-examples/issues"
   },
-  "homepage": "https://github.com/SunShinewyf/react-hoc-examples#readme"
+  "homepage": "https://github.com/SunShinewyf/react-hoc-examples#readme",
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "run-js": "^2.1.1"
+  }
 }
