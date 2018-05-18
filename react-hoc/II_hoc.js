@@ -11,8 +11,12 @@ class Example extends React.PureComponent {
     super(props);
   }
 
+  componentDidMount() {
+    console.log("wrappedComponent did mount");
+  }
+
   render() {
-    const { name, age, github } = this.props;
+    const { age } = this.props;
     return (
       <div>
         <p>{age}</p>
@@ -23,6 +27,10 @@ class Example extends React.PureComponent {
 
 function HOC(WrapperComponent) {
   return class Inheritance extends WrapperComponent {
+    componentDidMount() {
+      console.log("HOC did mount");
+      super.componentDidMount();
+    }
     render() {
       return super.render();
     }

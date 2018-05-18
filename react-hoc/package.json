@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "run-js pp_hoc.js",
+    "pp_ref": "run-js pp_refs_hoc.js",
     "input": "run-js input_hoc.js",
-    "ii": "run-js ii_hoc.js"
+    "ii": "run-js ii_hoc.js",
+    "ii_render": "run-js ii_render.js"
   },
   "repository": {
     "type": "git",
