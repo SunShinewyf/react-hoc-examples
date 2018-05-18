@@ -4,9 +4,9 @@
   "description": "the examples of react-hoc",
   "main": "index.js",
   "scripts": {
-    "start": "run-js propsProxy.js",
-    "input": "run-js hocInput.js",
-    "inheritInversion": "run-js inheritInversion.js"
+    "start": "run-js pp_hoc.js",
+    "input": "run-js input_hoc.js",
+    "ii": "run-js ii_hoc.js"
   },
   "repository": {
     "type": "git",
